@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arinverse</title>
+<meta name="description" content="Arinverse builds MeasureX, an AR measurement app for Android.">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --text: #1b1d22;
+    --muted: #5b6069;
+    --rule: #e2e5ea;
+    --accent: #2f6df6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --surface: #1c1f25;
+      --text: #e8eaee;
+      --muted: #a0a6b0;
+      --rule: #2c313a;
+      --accent: #7aa2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  header { padding: 4rem 0 2rem; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .lede { color: var(--muted); font-size: 1.05rem; margin: 0; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.5rem 0 .75rem;
+    letter-spacing: -.01em;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  .app {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .app h3 { margin: 0 0 .35rem; font-size: 1.2rem; letter-spacing: -.01em; }
+  .app p { margin: .35rem 0; }
+  .app .sub { color: var(--muted); }
+  ul { padding-left: 1.25rem; margin: .5rem 0; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Arinverse</h1>
+    <p class="lede">We build focused Android tools. One app so far, and it does one thing properly.</p>
+  </header>
+
+  <div class="app">
+    <h3>MeasureX</h3>
+    <p class="sub">AR ruler and tape measure for Android</p>
+    <p>
+      MeasureX measures real objects and spaces through your phone's camera, using Google ARCore —
+      a doorway, a wall, a worktop, a room, a parcel. It measures distance, rectangles, circles,
+      triangles, angles and volume, shows the full breakdown for each, and exports a project as a
+      PDF report, an image sheet or a CAD (DXF) drawing.
+    </p>
+    <ul>
+      <li>Measuring, saving and exporting work fully offline</li>
+      <li>No account and no sign-in</li>
+      <li>Metric and imperial, including feet-and-inches</li>
+      <li>Requires an ARCore-supported device and camera permission</li>
+    </ul>
+    <p><a href="/measurex-privacy-policy/">MeasureX privacy policy</a></p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>
+    Support, questions and bug reports:
+    <a href="mailto:arinverse369@gmail.com">arinverse369@gmail.com</a>
+  </p>
+
+  <footer>
+    <p>&copy; Arinverse</p>
+  </footer>
+</main>
+</body>
+</html>
