@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Zubaan</title>
+<meta name="description" content="Privacy Policy for Zubaan, an offline AI subtitle studio by Arinverse.">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --text: #1b1d22;
+    --muted: #5b6069;
+    --rule: #e2e5ea;
+    --accent: #2f6df6;
+    --note-bg: #eef3ff;
+    --note-border: #b9cdfb;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --surface: #1c1f25;
+      --text: #e8eaee;
+      --muted: #a0a6b0;
+      --rule: #2c313a;
+      --accent: #7aa2ff;
+      --note-bg: #1b2333;
+      --note-border: #33456b;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  header {
+    padding: 3rem 0 1.5rem;
+    border-bottom: 1px solid var(--rule);
+    margin-bottom: 2rem;
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.5rem 0 .75rem;
+    letter-spacing: -.01em;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  h3 { font-size: 1rem; margin: 1.5rem 0 .4rem; }
+  p, li { color: var(--text); }
+  .lede { color: var(--muted); font-size: 1.05rem; margin: 0; }
+  .meta { color: var(--muted); font-size: .9rem; margin: .75rem 0 0; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  strong { font-weight: 650; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 4px;
+    padding: .1em .35em;
+  }
+  .note {
+    background: var(--note-bg);
+    border: 1px solid var(--note-border);
+    border-radius: 10px;
+    padding: 1rem 1.15rem;
+    margin: 1.5rem 0;
+  }
+  .note p { margin: 0; }
+  .table-wrap { overflow-x: auto; margin: 1rem 0; }
+  table { border-collapse: collapse; width: 100%; min-width: 30rem; background: var(--surface); }
+  th, td {
+    text-align: left;
+    padding: .7rem .85rem;
+    border: 1px solid var(--rule);
+    vertical-align: top;
+    font-size: .95rem;
+  }
+  th { font-weight: 650; }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Privacy Policy — Zubaan</h1>
+  <p class="lede">Zubaan is an offline AI subtitle studio for Android, published by Arinverse.</p>
+  <p class="meta">Last updated: 13 September 2026 &middot; Applies to the Android app <code>com.zubaan.app</code></p>
+</header>
+
+<h2>The short version</h2>
+<p>
+  Zubaan has no accounts and no sign-in. Every video you import, every transcript it writes and
+  every caption you style stays on your phone. We cannot see any of it, because none of it is ever
+  sent anywhere. The app is built offline-first on purpose — importing, transcribing, styling and
+  exporting a video all run using on-device speech models, not a server we operate.
+</p>
+<p>
+  The app does reach the internet for a small number of specific, one-off jobs — described in full
+  below — and, if you choose to subscribe, Google Play Billing handles that payment directly; we
+  never see your card or payment details.
+</p>
+
+<h2>What the app does with your video</h2>
+<p>
+  When you import a video, Zubaan reads it from your device's storage to extract its audio and to
+  show you the frames you're captioning. That video, and the audio taken from it, is processed
+  <strong>entirely on your device</strong> — by an on-device speech-recognition model, not a
+  server. It is never uploaded, and no copy of it or its transcript is transmitted to us or to
+  anyone else.
+</p>
+<p>
+  Exported videos (with captions burned in) are written to your device's storage or handed to
+  Android's share sheet when you choose to share or save one. Once exported, that file is yours
+  and is no longer managed by the app.
+</p>
+
+<h2>What the app stores on your device</h2>
+<ul>
+  <li><strong>Projects</strong> — the video reference, transcript, word timings and caption
+    styling for each project you create.</li>
+  <li><strong>Language packs</strong> — the speech-recognition model files for whichever
+    languages you've installed.</li>
+  <li><strong>Settings</strong> — your chosen languages, caption style preferences and app
+    preferences.</li>
+  <li><strong>Exported files</strong> — videos you've exported, written to your device's
+    storage so other apps can open or share them.</li>
+</ul>
+
+<h2>What the app downloads</h2>
+<p>The only network requests Zubaan makes are these:</p>
+<ul>
+  <li><strong>Language packs.</strong> When you choose to install a language, its
+    speech-recognition model files download over a plain HTTPS connection from the model
+    hosts we use. This is a one-way file transfer — no personal or usage data is sent as
+    part of it, and it only happens when you ask for it.</li>
+  <li><strong>Checking for a metered connection.</strong> Before starting a language-pack
+    download (typically 70&ndash;240 MB), the app checks whether you're on Wi-Fi or mobile
+    data, so it can honour the Wi-Fi-only download setting. This check stays on the device
+    and sends nothing anywhere.</li>
+</ul>
+<p>
+  Transcription, styling, diarization (telling speakers apart) and export never touch the
+  network at all, and work with no signal once a language pack is installed.
+</p>
+
+<h2>Subscriptions</h2>
+<p>
+  Zubaan offers a 14-day free trial, after which continuing without ads requires a
+  subscription. Subscriptions are handled entirely by <strong>Google Play Billing</strong>.
+  We never receive or store your card number or payment details — Google processes those
+  under its own
+  <a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a>. We only
+  learn whether you have an active subscription, not how you paid for it.
+</p>
+
+<div class="note">
+  <p>
+    <strong>Zubaan does not currently show third-party ads.</strong> If an ad-supported free
+    tier is introduced later, this page will be updated first with a full breakdown of what
+    the advertising provider collects, in the same detail as our other apps' policies.
+  </p>
+</div>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not operate a server that receives your videos, audio or transcripts.</li>
+  <li>We do not ask for your name, email address or phone number.</li>
+  <li>We do not use analytics or crash-reporting services.</li>
+  <li>We do not sell your personal information.</li>
+</ul>
+
+<h2>Permissions the app requests</h2>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Permission</th><th>Why it is needed</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>READ_MEDIA_VIDEO</code> / <code>READ_EXTERNAL_STORAGE</code></td>
+      <td>To read the video file you choose to import. <code>READ_EXTERNAL_STORAGE</code> is
+        only requested on Android 12L and older, which don't have the newer, narrower
+        media permission.</td>
+    </tr>
+    <tr>
+      <td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
+      <td>To download language packs when you ask to install one, and to check whether
+        you're on Wi-Fi or mobile data first. Not used for anything else.</td>
+    </tr>
+    <tr>
+      <td><code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>,
+        <code>FOREGROUND_SERVICE_DATA_SYNC</code></td>
+      <td>So a language-pack download or a transcription run can keep going, with a
+        progress notification, if you switch to another app while it works.</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Children</h2>
+<p>
+  Zubaan is a general-purpose creative tool and is not directed at children under 13. We do
+  not knowingly collect personal information from children.
+</p>
+
+<h2>Your rights</h2>
+<p>
+  Because the app holds your data only on your own device, you already have direct control
+  over all of it: delete a project inside the app, or uninstall the app to remove everything
+  it stored, including every downloaded language pack.
+</p>
+<p>
+  Depending on where you live &mdash; under the GDPR in the EEA and UK, the Digital Personal
+  Data Protection Act in India, or state privacy laws in the United States &mdash; you may
+  also have rights concerning any data Google holds about your subscription, which are best
+  directed to Google directly, since they, not we, hold that data.
+</p>
+
+<h2>Changes to this policy</h2>
+<p>
+  If this policy changes, the revised version will be posted at this address with a new
+  "last updated" date. Material changes affecting how the app handles your information will
+  also be noted in the app's release notes on Google Play.
+</p>
+
+<h2>Contact</h2>
+<p>
+  Questions about this policy or about how Zubaan handles your data:<br>
+  <strong>Arinverse</strong> &middot; <a href="mailto:arinverse369@gmail.com">arinverse369@gmail.com</a>
+  &middot; <a href="/support/">Support page</a>
+</p>
+
+<footer>
+  Zubaan — offline AI subtitle studio, by Arinverse.
+</footer>
+
+</main>
+</body>
+</html>
