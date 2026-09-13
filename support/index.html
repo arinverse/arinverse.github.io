@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Arinverse</title>
+<meta name="description" content="Support contact for Arinverse apps: Zubaan and MeasureX.">
+<style>
+  :root {
+    --bg: #f6f7f9;
+    --surface: #ffffff;
+    --text: #1b1d22;
+    --muted: #5b6069;
+    --rule: #e2e5ea;
+    --accent: #2f6df6;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161a;
+      --surface: #1c1f25;
+      --text: #e8eaee;
+      --muted: #a0a6b0;
+      --rule: #2c313a;
+      --accent: #7aa2ff;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 1.25rem 4rem;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 46rem; margin: 0 auto; }
+  header { padding: 4rem 0 2rem; }
+  h1 { font-size: 2.1rem; line-height: 1.2; margin: 0 0 .5rem; letter-spacing: -.02em; }
+  .lede { color: var(--muted); font-size: 1.05rem; margin: 0; }
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.5rem 0 .75rem;
+    letter-spacing: -.01em;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: none; padding-top: 0; }
+  .app {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+  }
+  .app h3 { margin: 0 0 .35rem; font-size: 1.2rem; letter-spacing: -.01em; }
+  .app p { margin: .35rem 0; }
+  .app .sub { color: var(--muted); }
+  .contact {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 14px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .contact a { font-weight: 650; font-size: 1.05rem; }
+  ul { padding-left: 1.25rem; margin: .5rem 0; }
+  li { margin: .3rem 0; }
+  a { color: var(--accent); }
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted);
+    font-size: .9rem;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Support</h1>
+    <p class="lede">Help for any app published by Arinverse.</p>
+  </header>
+
+  <h2>Contact us</h2>
+  <div class="contact">
+    <span>Questions, bug reports, or anything else — we read every email.</span>
+    <a href="mailto:arinverse369@gmail.com">arinverse369@gmail.com</a>
+  </div>
+
+  <h2>Before you write in</h2>
+  <div class="app">
+    <h3>Zubaan</h3>
+    <p class="sub">Offline AI subtitle studio</p>
+    <ul>
+      <li>Transcription quality issues are usually fixed by installing the larger
+        "Better accuracy" language pack from Settings → Languages.</li>
+      <li>A stuck import or export almost always means the phone ran low on
+        storage mid-job — free up space and retry.</li>
+      <li>Subscription or billing questions: include the email or Google
+        account you subscribed with.</li>
+    </ul>
+  </div>
+  <div class="app">
+    <h3>MeasureX</h3>
+    <p class="sub">AR ruler and tape measure</p>
+    <ul>
+      <li>Poor tracking is usually a lighting or surface issue — try a
+        well-lit, textured surface rather than a blank wall or glass.</li>
+      <li>MeasureX requires an ARCore-supported device; unsupported devices
+        are listed by Google
+        <a href="https://developers.google.com/ar/devices" rel="noopener">here</a>.</li>
+    </ul>
+  </div>
+
+  <h2>Privacy policies</h2>
+  <p>
+    <a href="/zubaan-privacy-policy/">Zubaan privacy policy</a> ·
+    <a href="/measurex-privacy-policy/">MeasureX privacy policy</a>
+  </p>
+
+  <footer>
+    <p><a href="/">&larr; Arinverse</a></p>
+  </footer>
+</main>
+</body>
+</html>
