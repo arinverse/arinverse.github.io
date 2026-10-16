@@ -101,7 +101,7 @@
 <header>
   <h1>Privacy Policy — Zubaan</h1>
   <p class="lede">Zubaan is an offline AI subtitle studio for Android, published by Arinverse.</p>
-  <p class="meta">Last updated: 13 September 2026 &middot; Applies to the Android app <code>com.zubaan.app</code></p>
+  <p class="meta">Last updated: 16 October 2026 &middot; Applies to the Android app <code>com.zubaan.app</code></p>
 </header>
 
 <h2>The short version</h2>
@@ -112,9 +112,12 @@
   exporting a video all run using on-device speech models, not a server we operate.
 </p>
 <p>
-  The app does reach the internet for a small number of specific, one-off jobs — described in full
-  below — and, if you choose to subscribe, Google Play Billing handles that payment directly; we
-  never see your card or payment details.
+  The app does reach the internet for a small number of specific jobs, described in full below.
+  The free and trial versions show ads, supplied by Google AdMob and its mediation partner Unity
+  Ads; those services collect some technical information about your device to do so, and in the
+  EEA, the UK and Switzerland you are asked for consent first. <strong>Zubaan Pro shows no ads
+  and requests none.</strong> If you subscribe, Google Play Billing handles the payment; we never
+  see your card or payment details. Advertisers never receive your videos, audio or transcripts.
 </p>
 
 <h2>What the app does with your video</h2>
@@ -143,46 +146,108 @@
     storage so other apps can open or share them.</li>
 </ul>
 
-<h2>What the app downloads</h2>
+<h2>What the app sends and downloads</h2>
 <p>The only network requests Zubaan makes are these:</p>
 <ul>
-  <li><strong>Language packs.</strong> When you choose to install a language, its
-    speech-recognition model files download over a plain HTTPS connection from the model
-    hosts we use. This is a one-way file transfer — no personal or usage data is sent as
-    part of it, and it only happens when you ask for it.</li>
+  <li><strong>Language packs and optional models.</strong> When you choose to install a
+    language, or an optional model such as better punctuation, its files download over HTTPS
+    from our own repository on Hugging Face
+    (<a href="https://huggingface.co/arinverse/zubaan-models" rel="noopener">huggingface.co/arinverse/zubaan-models</a>).
+    It only happens when you ask for it, and nothing about you or your videos is sent with
+    the request. As with any download from the internet, Hugging Face's servers see your
+    device's IP address to deliver the file; Hugging Face handles that under its own
+    <a href="https://huggingface.co/privacy" rel="noopener">Privacy Policy</a>. We do not
+    receive it.</li>
+  <li><strong>Ads (free and trial versions only).</strong> Ad requests to Google AdMob and,
+    through AdMob mediation, Unity Ads. What these carry is set out under
+    <a href="#advertising">Advertising</a> below.</li>
   <li><strong>Checking for a metered connection.</strong> Before starting a language-pack
     download (typically 70&ndash;240 MB), the app checks whether you're on Wi-Fi or mobile
     data, so it can honour the Wi-Fi-only download setting. This check stays on the device
     and sends nothing anywhere.</li>
 </ul>
 <p>
-  Transcription, styling, diarization (telling speakers apart) and export never touch the
+  Transcription, styling and export never touch the
   network at all, and work with no signal once a language pack is installed.
 </p>
 
 <h2>Subscriptions</h2>
 <p>
-  Zubaan offers a 14-day free trial, after which continuing without ads requires a
-  subscription. Subscriptions are handled entirely by <strong>Google Play Billing</strong>.
+  Zubaan is free to use for 14 days from first launch, with no payment details needed and
+  nothing charged when the trial ends. The free and trial versions show ads and add a small
+  watermark to exports. After the trial, starting new projects and exporting videos
+  need a Zubaan Pro subscription; your existing projects stay available and editable. Subscriptions are handled entirely by <strong>Google Play Billing</strong>.
   We never receive or store your card number or payment details — Google processes those
   under its own
   <a href="https://policies.google.com/privacy" rel="noopener">Privacy Policy</a>. We only
-  learn whether you have an active subscription, not how you paid for it.
+  learn whether you have an active subscription, not how you paid for it. You can cancel any
+  time in the app (Settings &rarr; Manage or cancel subscription) or in Google Play.
 </p>
 
-<div class="note">
-  <p>
-    <strong>Zubaan does not currently show third-party ads.</strong> If an ad-supported free
-    tier is introduced later, this page will be updated first with a full breakdown of what
-    the advertising provider collects, in the same detail as our other apps' policies.
-  </p>
+<h2 id="advertising">Advertising</h2>
+<p>
+  The free and trial versions of Zubaan show full-screen ads at two moments only: when you open
+  the editor after a transcription finishes, and when you start an export. Never while you are
+  editing. Ads are supplied by <strong>Google AdMob</strong>, which may source an ad from its
+  mediation partner <strong>Unity Ads</strong>. Both are independent companies and each acts as
+  its own data controller for what it collects. Zubaan Pro subscribers see no ads, and the app
+  makes no ad requests for them.
+</p>
+
+<h3>What advertising services may collect</h3>
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>Data</th><th>Why</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Advertising ID and app set ID (resettable identifiers Android provides)</td>
+      <td>To limit how often you see the same ad, to measure ads and, where you have consented,
+        to select relevant ads</td>
+    </tr>
+    <tr>
+      <td>IP address, and approximate location derived from it</td>
+      <td>To serve ads suited to your country and to apply the right privacy laws</td>
+    </tr>
+    <tr>
+      <td>Ad interactions, such as whether an ad was shown or tapped</td>
+      <td>To measure and bill for advertising, and to detect fraud</td>
+    </tr>
+    <tr>
+      <td>Diagnostic information about the ads SDK's performance</td>
+      <td>To keep ad delivery working and to detect fraud</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+<p>
+  All of it is sent encrypted. These companies' own policies govern what they do with it:
+</p>
+<ul>
+  <li>Google AdMob — <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">How Google uses information from sites or apps that use our services</a></li>
+  <li>Unity Ads — <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" rel="noopener">Unity Game Player and App User Privacy Policy</a></li>
+</ul>
+
+<h3>Your choices about advertising</h3>
+<ul>
+  <li><strong>In the EEA, the UK and Switzerland</strong>, the app asks for your consent before
+    any ad is requested, using Google's certified consent tool. You can change your answer any
+    time from Settings &rsaquo; Ad privacy choices.</li>
+  <li><strong>In US states with applicable privacy laws</strong>, including California, you can
+    opt out of the sale or sharing of personal information for targeted advertising through the
+    same consent tool.</li>
+  <li><strong>Anywhere</strong>, you can reset or delete your Advertising ID in Android's
+    Settings &rsaquo; Privacy &rsaquo; Ads.</li>
+  <li>Subscribing to Zubaan Pro removes ads entirely.</li>
+</ul>
 
 <h2>What we do not do</h2>
 <ul>
   <li>We do not operate a server that receives your videos, audio or transcripts.</li>
   <li>We do not ask for your name, email address or phone number.</li>
-  <li>We do not use analytics or crash-reporting services.</li>
+  <li>We do not run our own analytics or crash-reporting services.</li>
+  <li>Advertisers never receive your videos, audio, transcripts or captions.</li>
   <li>We do not sell your personal information.</li>
 </ul>
 
@@ -201,8 +266,13 @@
     </tr>
     <tr>
       <td><code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code></td>
-      <td>To download language packs when you ask to install one, and to check whether
-        you're on Wi-Fi or mobile data first. Not used for anything else.</td>
+      <td>To download language packs when you ask to install one, to check whether you're on
+        Wi-Fi or mobile data first, and, in the free and trial versions, to fetch ads.</td>
+    </tr>
+    <tr>
+      <td><code>AD_ID</code></td>
+      <td>Added by the ads SDK, so ads can be frequency-capped, measured and, with consent,
+        personalised.</td>
     </tr>
     <tr>
       <td><code>POST_NOTIFICATIONS</code>, <code>FOREGROUND_SERVICE</code>,
@@ -240,11 +310,23 @@
   also be noted in the app's release notes on Google Play.
 </p>
 
+<h2 id="grievance">Grievance officer</h2>
+<p>
+  In line with India's Digital Personal Data Protection Act, 2023 and the Consumer Protection
+  (E-Commerce) Rules, 2020, complaints about this app, its subscriptions or how it handles
+  personal data can be sent to:
+</p>
+<p>
+  <strong>Arindam Seal</strong>, Grievance Officer, Arinverse<br>
+  <a href="mailto:arinverse369@gmail.com">arinverse369@gmail.com</a><br>
+  We acknowledge a complaint within 48 hours and aim to resolve it within one month.
+</p>
+
 <h2>Contact</h2>
 <p>
   Questions about this policy or about how Zubaan handles your data:<br>
   <strong>Arinverse</strong> &middot; <a href="mailto:arinverse369@gmail.com">arinverse369@gmail.com</a>
-  &middot; <a href="/support/">Support page</a>
+  &middot; <a href="/support/">Support page</a> &middot; <a href="/zubaan-terms/">Terms of Use</a>
 </p>
 
 <footer>
